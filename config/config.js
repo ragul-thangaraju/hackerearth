@@ -5,7 +5,7 @@ const config = (() => {
   switch (process.env.NODE_ENV) {
     case "local":
       return {
-        host: "localhost",
+        host: "0.0.0.0",
         port: 5000,
         secret: "thisissecret",
         mongodb:
@@ -14,7 +14,7 @@ const config = (() => {
       
     default:
       return {
-        host: "localhost",
+        host: "0.0.0.0",
         port: 5000,
         secret: "thisissecret",
         mongodb:
